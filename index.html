@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gardening - My Hobby 👩🏼‍🌾🌱</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(251, 250, 225) 11.2%,
+          rgb(206, 240, 185) 47.5%,
+          rgb(100, 163, 111) 100.2%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 38px;
+        padding: 5px, 8px;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid darkgray;
+        background: #75816b;
+        color: #fbfae1;
+        font-size: 16px;
+        border-radius: 30px;
+        padding: 10px 20px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      button:hover {
+        background: #fbfae1;
+        color: black;
+        cursor: pointer;
+      }
+      footer {
+        font-size: 12px;
+        text-align: center;
+        padding: 20px 0 0 0;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 18px;
+      }
+      a {
+        color: #75816b;
+      }
+      a:hover {
+        color: green;
+        cursor: pointer;
+      }
+      .container {
+        display: block;
+        margin: 0 auto;
+        max-width: 600px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      .theme-button {
+        font-size: 10px;
+        background: black;
+        color: white;
+      }
+      .theme-button:hover {
+        background: white;
+        color: black;
+      }
+      .harvest-pic {
+        border-radius: 5px;
+        transition: all 250ms ease-in-out;
+        margin: 0 0 10px 0;
+      }
+      .harvest-pic:hover {
+        cursor: pointer;
+        filter: contrast(50%);
+        transform: scale(1.3);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+      }
+      .grid img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+        transition: all 300ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(2);
+      }
+
+      .dark {
+        background: black;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+        color: whitesmoke;
+      }
+
+      .dark a {
+        color: #75816b;
+      }
+      .dark a:hover {
+        color: #fbfae1;
+        cursor: pointer;
+      }
+
+      .dark .theme-button {
+        box-shadow: 3px 5px 10px rgba(255, 255, 255, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Dark Theme</button>
+
+    <div class="container">
+      <h1>👩🏼‍🌾 Gardening 🌱</h1>
+      <h2>Relax, Recharge and be Productive</h2>
+
+      <a href="https://en.wikipedia.org/wiki/Gardening" target="_blank">
+        <img
+          class="harvest-pic"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/917/original/pexels-kampus-production-7658822.jpg?1679420547"
+          alt="harvest"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/920/original/pexels-lisa-fotios-1301856.jpg?1679420586"
+          alt="soil"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/914/original/pexels-%C3%A2%C2%96%C2%83-1105019.jpg?1679420518"
+          alt="seedlings"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/921/original/zoe-schaeffer-hmoDcZnB7uw-unsplash.jpg?1679420593"
+          alt="vegetable basket"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/916/original/pexels-elizabeth-tr-armstrong-635705.jpg?1679420540"
+          alt="apple tree"
+        />
+      </div>
+
+      <p>
+        <strong>Gardening</strong> is the practice of growing and cultivating
+        plants as part of horticulture. In gardens, ornamental plants are often
+        grown for their flowers, foliage, or overall appearance; useful plants,
+        such as root vegetables, leaf vegetables, fruits, and herbs, are grown
+        for consumption, for use as dyes, or for medicinal or cosmetic use.
+        <br />
+        Gardening ranges in scale from fruit orchards, to long boulevard
+        plantings with one or more different types of shrubs, trees, and
+        herbaceous plants, to residential back gardens including lawns and
+        foundation plantings, all the way to container gardens grown inside or
+        outside. Gardening may be very specialized, with only one type of plant
+        grown, or involve a variety of plants in mixed plantings. It involves an
+        active participation in the growing of plants, and tends to be
+        labor-intensive, which differentiates it from farming or forestry.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Gardening" target="_blank">
+        Read more on Wikipedia
+      </a>
+      <br /><br />
+      <button class="learn-button">Learn About Gardening</button>
+      <footer>Coded with 💚 by Vicky Stevenson</footer>
+    </div>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+          themeButton.innerHTML = "Dark Theme";
+        } else {
+          body.classList.add("dark");
+          themeButton.innerHTML = "Light Theme";
+        }
+      }
+
+      function contactUs() {
+        let name = prompt("What's your first name?");
+        let email = prompt("What is your email address?");
+        alert("Fantastic! We'll be in touch! 😃");
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      let learnButton = document.querySelector(".learn-button");
+      learnButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
